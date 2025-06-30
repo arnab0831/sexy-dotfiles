@@ -1,0 +1,15 @@
+[user]
+	email = arnab@ema.co
+	name = Arnab Banik
+[core]
+	excludesfile = /Users/arnab/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/arnab/.stCommitMsg
+[url "git@github.com:"]
+	insteadOf = https://github.com/

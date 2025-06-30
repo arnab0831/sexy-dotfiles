@@ -12,15 +12,31 @@ This repository contains my terminal and shell configuration that I sync across 
 - **Warp terminal** settings backup
 - **Development tools** configuration (NVM, pnpm, bun, etc.)
 
-## 🚀 Quick Setup on New Machine
+## 🚀 Quick Setup Options
 
+### For BRAND NEW MacBook (nothing installed):
+```bash
+# One-line setup for fresh laptop
+curl -sSL https://raw.githubusercontent.com/arnab0831/sexy-dotfiles/main/fresh_laptop_setup.sh | bash
+```
+
+### For existing machine with some tools:
+```bash
+# One-line setup for existing machine
+curl -sSL https://raw.githubusercontent.com/arnab0831/sexy-dotfiles/main/setup_other_machine.sh | bash
+```
+
+### Manual setup:
 ```bash
 # Clone this repository
-git clone <your-repo-url> ~/dotfiles
+git clone https://github.com/arnab0831/sexy-dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
-# Run the installation script
-./install.sh
+# For fresh laptop
+./fresh_laptop_setup.sh
+
+# OR for existing machine
+./bulletproof_install.sh
 ```
 
 ## 🔄 Manual Restore

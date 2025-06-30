@@ -1,10 +1,15 @@
 #!/bin/bash
 
 # Simple one-command setup for other machines
-# Run this on a fresh machine:
+# For EXISTING machines with some tools already installed:
 # curl -sSL https://raw.githubusercontent.com/arnab0831/sexy-dotfiles/main/setup_other_machine.sh | bash
+#
+# For BRAND NEW laptops, use this instead:
+# curl -sSL https://raw.githubusercontent.com/arnab0831/sexy-dotfiles/main/fresh_laptop_setup.sh | bash
 
-echo "🚀 Setting up sexy dotfiles on new machine..."
+echo "🚀 Setting up sexy dotfiles on existing machine..."
+echo "💡 Note: For brand new laptops, use fresh_laptop_setup.sh instead!"
+echo ""
 
 # Clone dotfiles
 if [ ! -d "$HOME/dotfiles" ]; then
